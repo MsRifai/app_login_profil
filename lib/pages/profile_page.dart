@@ -27,17 +27,17 @@ class _ProfilePageState extends State<ProfilePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // FOTO PROFIL
+            
             CircleAvatar(
               radius: 60,
-              backgroundImage: AssetImage('assets/prof.jpg'), // Pastikan file gambar ada ya Bang!
+              backgroundImage: AssetImage('assets/prof.jpg'), 
               backgroundColor: Colors.grey,
             ),
             SizedBox(height: 20),
 
-            // INFORMASI USER
+            
             Text(
-              'AHMAD DWI RIFAI', // Ganti sesuai data
+              'AHMAD DWI RIFAI', 
               style: TextStyle(
                 color: temaDark ? Colors.white : Colors.black,
                 fontSize: 20,
@@ -69,7 +69,7 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             SizedBox(height: 40),
 
-            // BUTTON GANTI TEMA
+            
             ElevatedButton(
               onPressed: gantiTema,
               child: Text('Ganti Tema'),

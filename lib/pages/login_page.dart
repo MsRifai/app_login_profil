@@ -31,11 +31,11 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Username
+            
             CustomField(usernameController: _usernameController),
             SizedBox(height: 20),
 
-            // Password
+            
             TextField(
               controller: _passwordController,
               obscureText: _obscureText,
@@ -52,10 +52,10 @@ class _LoginPageState extends State<LoginPage> {
             ),
             SizedBox(height: 30),
 
-            // Tombol Login
+            
             ElevatedButton(
               onPressed: () {
-                // Setelah login berhasil, pindah ke ProfilePage
+                
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => ProfilePage()),
